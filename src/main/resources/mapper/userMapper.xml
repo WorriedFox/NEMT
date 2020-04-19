@@ -5,7 +5,17 @@
 
 
 <mapper namespace="com.worriedfox.dao.UserDao">
-    <select id="getUser" resultType="com.worriedfox.domain.User">
+
+    <resultMap id="userMap" type="com.worriedfox.domain.User">
+        <result column="user_id" property="userId" jdbcType="INTEGER" />
+        <result column="user_name" property="userName" jdbcType="VARCHAR" />
+        <result column="credits" property="credits" jdbcType="INTEGER" />
+        <result column="password" property="password" jdbcType="VARCHAR" />
+        <result column="last_visit" property="lastVisit" jdbcType="TIMESTAMP" />
+        <result column="last_ip" property="lastIp" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <select id="getUser" resultMap="userMap">
         SELECT * FROM t_user
     </select>
 </mapper>

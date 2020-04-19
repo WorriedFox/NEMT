@@ -21,4 +21,7 @@
         <property name="prefix" value="/WEB-INF/views/" />
         <property name="suffix" value=".jsp" />
     </bean>
+
+    <!-- web.xml中欢迎页面起作用 -->
+    <mvc:default-servlet-handler />
 </beans>

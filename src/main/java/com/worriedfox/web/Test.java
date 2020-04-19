@@ -13,7 +13,7 @@ public class Test {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/test")
+    @RequestMapping(value = "/getUser")
     @ResponseBody
     public User test(){
         System.out.println("走到这儿了。。。。。。。");
@@ -22,7 +22,7 @@ public class Test {
         return user;
     }
 
-    @RequestMapping(value = "/xn")
+    @RequestMapping(value = "/test")
     public String xn(){
         return "test";
     }
