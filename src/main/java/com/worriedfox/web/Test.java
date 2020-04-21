@@ -21,7 +21,7 @@ public class Test {
         System.out.println(user.toString());
         return user;
     }
-/*测试*/
+/*ces1*/
     @RequestMapping(value = "/test")
     public String test(){
         return "test";
