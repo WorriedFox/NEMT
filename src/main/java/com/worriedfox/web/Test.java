@@ -15,7 +15,7 @@ public class Test {
 
     @RequestMapping(value = "/getUser")
     @ResponseBody
-    public User test(){
+    public User getUser(){
         System.out.println("走到这儿了。。。。。。。");
         User user = userService.getUser();
         System.out.println(user.toString());
@@ -23,7 +23,7 @@ public class Test {
     }
 
     @RequestMapping(value = "/test")
-    public String xn(){
+    public String test(){
         return "test";
     }
 }

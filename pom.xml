@@ -244,9 +244,9 @@
           <httpConnector>
             <port>10086</port>
           </httpConnector>
-          <!--<webAppConfig>
+          <webAppConfig>
             <contextPath>/nemt</contextPath>
-          </webAppConfig>-->
+          </webAppConfig>
           <scanIntervalSeconds>0</scanIntervalSeconds>
         </configuration>
       </plugin>
