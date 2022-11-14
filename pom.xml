@@ -14,7 +14,7 @@
 
 
   <properties>
-    <org.springframework.version>4.2.2.RELEASE</org.springframework.version>
+    <org.springframework.version>4.2.7.RELEASE</org.springframework.version>
     <javax.version>8.0</javax.version>
     <javax.servlet.jsp.version>2.2</javax.servlet.jsp.version>
     <redis.clients.version>2.9.0</redis.clients.version>
